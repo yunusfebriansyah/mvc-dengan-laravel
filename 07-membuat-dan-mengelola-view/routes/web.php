@@ -16,3 +16,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/view', function() {
+    return view('views-management',
+        [
+            'nama' => 'Fahri Husein',
+            'anggota' => [
+                [
+                    'nama' => 'Andi',
+                    'jk' => 'Laki-laki',
+                    'umur' => 25,
+                ],
+                [
+                    'nama' => 'Mawar',
+                    'jk' => 'Perempuan',
+                    'umur' => 21,
+                ],
+            ]
+        ]);
+});
