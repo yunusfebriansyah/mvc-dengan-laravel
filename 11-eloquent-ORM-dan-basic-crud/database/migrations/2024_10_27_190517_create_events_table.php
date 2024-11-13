@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
-            $table->date('date');
+            $table->timestamp('date');
             $table->string('location');
             $table->foreignId('organizer_id');
             $table->timestamps();

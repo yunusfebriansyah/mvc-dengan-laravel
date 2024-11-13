@@ -26,7 +26,7 @@ class DatabaseSeeder extends Seeder
             [
                 'title' => 'Konser Band Se-Lampung',
                 'description' => 'Ini adalah konser termewah dan termegah se-lampung!!!!',
-                'date' => '2024-10-27',
+                'date' => '2024-10-27 19:00:00',
                 'location' => 'Stadion Sumpah Pemuda, Bandar Lampung',
                 'organizer_id' => 1,
                 'created_at' => Carbon::now(),
@@ -35,7 +35,7 @@ class DatabaseSeeder extends Seeder
             [
                 'title' => 'Konser KPU Lampung Tengah',
                 'description' => 'Ini adalah konser deni caknan!!!!',
-                'date' => '2024-08-27',
+                'date' => '2024-08-27 15:00:00',
                 'location' => 'Lapangan Tanggulangin, Punggur',
                 'organizer_id' => 1,
                 'created_at' => Carbon::now(),

@@ -30,5 +30,9 @@ Route::get('/admin', [DashboardController::class, 'index']);
 
 # route events crud
 Route::get('/admin/events', [EventController::class, 'index']);
+Route::post('/admin/events', [EventController::class, 'store']);
+Route::get('/admin/events/create', [EventController::class, 'create']);
 Route::get('/admin/events/{event}', [EventController::class, 'show']);
+Route::put('/admin/events/{event}', [EventController::class, 'update']);
+Route::get('/admin/events/{event}/edit', [EventController::class, 'edit']);
 Route::delete('/admin/events/{event}', [EventController::class, 'delete']);

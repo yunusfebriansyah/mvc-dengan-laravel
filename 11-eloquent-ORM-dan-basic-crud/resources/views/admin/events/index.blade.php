@@ -2,7 +2,9 @@
 
 @section('content')
 
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Master Data /</span> Data Event</h4>
+<h4 class="fw-bold py-3 mb-2"><span class="text-muted fw-light">Master Data /</span> Data Event</h4>
+
+<a href="/admin/events/create" class="btn btn-primary mb-4">Tambah Data</a>
 
 <div class="card">
     <div class="card-body">
@@ -16,7 +18,7 @@
         <thead>
             <tr>
             <th>Judul</th>
-            <th>Tanggal</th>
+            <th>Waktu</th>
             <th>Lokasi</th>
             <th>Organizer</th>
             <th>Actions</th>
@@ -28,7 +30,7 @@
             <td>
                 <i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>{{ $event->title }}</strong>
             </td>
-            <td>{{ \Carbon\Carbon::parse($event->date)->format('j F, Y') }}</td>
+            <td>{{ \Carbon\Carbon::parse($event->date)->format('j F, Y H:i') }}</td>
             <td>{{ $event->location }}</td>
             <td>{{ $event->organizer_id }}</td>
             <td>
